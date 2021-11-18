@@ -1,0 +1,181 @@
+body{
+    font-family: monospace;
+    background-color: black;
+}
+.contenedor{
+    margin:auto;
+    display:table;
+}
+h1{
+    float:left;
+    color:#fff;
+    position:relative;
+}
+h2{
+    color:#fff;
+}
+.aparece{
+    display:flex;
+    justify-content:center;
+}
+
+h1 span{
+    position:absolute;
+    right:0;
+    width: 0;
+    background: black;
+    border-left: 1px solid #000;
+    animation: maquina 5s  steps(16);
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+.animate__animated {
+    display: inline-block;
+    margin: 0 0.5rem;    
+    animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-delay: 5s;
+    
+    
+}
+.animate__animated:nth-child(3) {
+    display:flex;
+    margin-top: 50px;
+    width: 100%;
+    background-color: darkcyan;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    animation-delay: 6s;
+    
+}
+.animate__animated:nth-child(4) {
+    animation-delay: 7s;
+    
+}
+.animate__animated:nth-child(5) {
+    margin-top: 350px;
+    animation-delay: 8s;
+    justify-content: center;
+}
+.animate__animated:nth-child(6) {
+    /* margin-top: 100px;; */
+    animation-delay: 9s;
+}
+.animate__animated:nth-child(7) {
+    /* margin-top: 100px; */
+    animation-delay: 10s;
+}
+.animate__animated:nth-child(8) {
+    /* margin-top: 100px; */
+    animation-delay: 10s;
+}
+
+.vt{/*contenedor de fotos villa, dogs*/
+    width: 400px;
+    border-radius: 10px;
+    margin:50px;
+    border : 1px solid rgb(14, 226, 102);
+}
+.title{/*contenedor imagenes titulos*/
+    width: 200px;
+    border-radius: 10px;
+    border : 1px solid rgb(14, 226, 102);   
+}
+.grid{/*tabla para los titulos*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.vb{/*contenedor foto codigo VB*/
+    width: 800px;
+    height: 350px;
+    border-radius: 10px;
+    margin:50px;
+    border : 1px solid rgb(14, 226, 102);
+}
+.vtDetail{/*contenedor texto descripciones trabajos*/
+    color:#fff;
+    margin-left: 30px;
+}
+.contain{/*pone en columna el titulo y la tabla de titulos*/
+    display:flex;
+    flex-direction: column;    
+    
+}
+.titles{/*contenedor animado de los titulos*/
+    width:100%;
+    height: 100px;   
+}
+.villa{/*contenedor animado de VT*/
+    display:flex;
+    
+    
+}
+.villaContainer{
+    display:flex;
+   
+  
+}
+.dogs{/*contenedor animado dogs*/
+    display:flex;
+    
+}
+
+.vBasic{/*contenedor animado VB*/
+    display:flex;
+        
+}
+a{/*Link de los proyectos*/
+    color:rgb(14, 226, 102);
+}
+h3{/*titulo Mis certificados*/
+    align-self: center;
+    color:#fff;
+}
+p{/*texto descriptivo de cada trabajo*/
+    width: 50%;
+    margin-top: 50px;
+    color: #fff;
+}
+hr{/*linea separadora*/
+    width: 100%;
+    border-color: rgb(14, 226, 102);
+}
+.other{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.otherContain{
+    display:flex;
+        
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    /* border-radius: 50%; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(14, 226, 102);
+}
+.footerOrder{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
